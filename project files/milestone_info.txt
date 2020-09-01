@@ -1,0 +1,8 @@
+milestone info:
+v_jupiter = 1.3052e4; r_j = 7.778e11
+v_sun = 12.459; r_s = 7.4248e8
+(calc sun & jupiter as 2 body)
+v_earth is the same from earth-sun, r_e = r_s + r_[e-s] because E & J are opposite, and the COM is on the J side of S.
+v_earth = 2.9788e4; r_e = 1.5034e11
+
+calculate v_x, v_y using cos(dt/T) where dt is time jump in days, T = 365 if using earth orbits

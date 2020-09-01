@@ -1,0 +1,4 @@
+100 particles
+2000  steps
+3.2 pc radius
+0.32 pc min separation

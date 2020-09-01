@@ -1,0 +1,55 @@
+program grav_collapse
+	get init values from file (function)
+		collect init positions, velocities etc (v at t-1/2)
+		define n steps
+		decide if KE/PE is required (energy = 1 or 0)
+
+	arrays with init values populated: (function)
+		r of N particles (Nxn); # each value is a list [x,y,z]
+		forces on N particles (Nxn); # each value " [Fx,Fy,Fz]
+		velocity of N particles(Nxn); # each value " [vx,vy,vz]
+
+	create 3D arrays for timesteps (allows plotting across time later)
+		stack empty arrays
+
+	loop over n steps:
+		force (t) calculation (function) # equal and opposite O(n^2) BIG
+			next velocity, energy, position calculation (function) # O(n)
+
+	output graphs: (function)
+		specific to simulation
+------------------------------------------------------------------------------------
+
+function inputs
+	open file (csv in notepad)
+	find finish time, N particles, n timesteps, softening & energy
+	create array of initial particle mass, positions & velocities (Nx7)
+
+funtction time arrays
+	(3D arrays are great)
+	take inputs, n timesteps
+	create n copies of zeros array
+	set 1st copy (i.e. stack[0]) to input value
+	stack arrays with np.stack # array ref: [time, particle, axis] for position etc
+
+function force calculation
+	calc F_ij (x,y,z)
+	add force to F_i(t) (x,y,z)
+	subtract force from F_j(t) (x,y,z)
+
+function force loop
+	i'th particle (0 to N) # starts at 0, stops at N-1
+		j'th particle(i+1 to N+1) # starts after i'th, stops at N
+			calculate force (function)
+
+function leapfrog integration
+	need m to become same shape as v & r first
+	v_next = v_current + F * dt / m
+	r_next = r_current + v_next * dt
+	v_half = v_current + F * dt / 2m
+	ke = 0.5mv_half^2 (this is associated with r_current *NOT* r_next)
+
+function time loop
+	t'th timestep (0 to n+1) # stops at n
+		update force (function)
+		update v,r,ke (function)

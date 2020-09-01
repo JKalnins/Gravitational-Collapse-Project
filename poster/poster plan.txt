@@ -1,0 +1,5 @@
+presentation plan:
+- initial conditions to simulate cluster (homogeneous due to poisson sphere)
+- demonstrate closeness of simulation to 1/r^2 law
+- alter mass and nparticles to find equation for heatmap of collapse time
+- 

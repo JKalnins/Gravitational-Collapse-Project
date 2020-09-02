@@ -1,6 +1,5 @@
 # Gravitational-Collapse-Project
-3rd Year University Computing Project Module
-Direct N-Body simulation of gravitational attraction using Python
+3rd Year University Computing Project Module: Direct N-Body simulation of gravitational attraction using Python
 
 ## Workflow
 poisson_creator.py: generates a random distribution of particles in 1-3D using a Poisson-sphere distribution to avoid particles beginning extremely close to one another

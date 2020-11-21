@@ -1,6 +1,6 @@
 __pycache__
 .spyproject
-data
+data/*
 diagrams
 figs
 poster

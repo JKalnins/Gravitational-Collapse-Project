@@ -1,8 +1,0 @@
-force on i
-\boldsymbol{F}_i = - G \sum_{j \neq i} m_i m_j \frac{\boldsymbol{r}_i - \boldsymbol{r}_j}{|\boldsymbol{r}_i - \boldsymbol{r}_j|^3}
-
-v update
-\boldsymbol{v}_i^{n+1/2} = \boldsymbol{v}_i^{n-1/2} + \boldsymbol{F}_i dt / m_i
-
-r update
-\boldsymbol{r}_i^{n+1} = \boldsymbol{x}_i^{n} + \boldsymbol{v}_i^{n+1/2} dt

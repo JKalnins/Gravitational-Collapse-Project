@@ -1,9 +1,0 @@
-I have been numerically calculating the gravitational interactions of particles over time using python to study the evolution of globular clusters.
-
-I've focused on studying a property known as relaxation time. This is effectively the time taken to reach an equilibrium state, or to remove any memory of the initial orbit of a star in the cluster.
-
-I measured relaxation time for a range of particle masses, and numbers of particles; and fit the data to a model by minimising the value of chi-squared for two different models. One was a theoretical prediction and one was based on the observed results.
-
-I found that given my assumptions of initial conditions, the theoretical models were inaccurate in some respects but my results for certain parameters agreed with theory.
-
-Further research into my initial conditions and the assumptions made will be necessary in order to study the relevance of these results.

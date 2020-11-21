@@ -1,10 +1,11 @@
-__pycache__/
-.spyproject/
-data/
-diagrams/
-figs/
-poster/
-presentation/
-project files/
+__pycache__
+.spyproject
+data
+diagrams
+figs
+poster
+presentation
+project files
+archived code
 *.xlsx
 *.npz
